@@ -90,7 +90,10 @@
     :n,md
     :num
     :w filename  保存一个新文件
-
+    :%s/oldword/newword/g 
+    :vsp 左右分屏 
+    :sp 上下分屏
+	
 # shell通配符
 #### * 号用于任意长度字符　　　例：ls *   
 #### ? 号用于匹配任意一个字符　例：ls file_?  　　有几个　？　就匹配几个字符

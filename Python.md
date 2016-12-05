@@ -157,3 +157,24 @@
     列表          序列      是
     字典          对应      是
     元祖          序列      否
+
+# 语句 
+#### 简单的If语句
+    if True/False:
+        语句块
+#### if...else...语句
+    if True/False：
+        语句块1
+    else
+        语句块2
+#### 阶梯形式
+    ifTrue/False：
+        语句块1
+    elif True/False:
+        语句块2
+    elif True/False:
+        语句块3
+        ...
+        ...
+    else:
+        语句块n

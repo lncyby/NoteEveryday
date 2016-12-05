@@ -178,3 +178,31 @@
         ...
     else:
         语句块n
+#### 嵌套形式
+    if True/False:
+        if True/False:
+            语句
+        else：
+            语句
+    else：
+        if True/False:
+            语句
+        else：
+            语句
+           
+#### if的条件运算
+    x if y else z           #如果Y是真值返回x  否则返回z
+#### while 语句格式
+    while True/False:
+        语句块
+    else：
+        语句块
+###### 每次   循环首先判断while后面的逻辑表达式，如果表达式为真则执行语句块，直到判断逻辑表达式为假终止循环。
+
+#### while...else...形式
+    while True/False:
+        语句块
+    else：
+        语句块
+###### 只有当while语句正常结束的时候才会执行else后的语句，如果while语句被中断（外部信号或者break等）则不执行else后的语句
+      

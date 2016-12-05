@@ -160,15 +160,15 @@
 
 # 语句 
 #### 简单的If语句
-    if True/False:
-        语句块
+    if True/False:
+        语句块
 #### if...else...语句
-    if True/False：
-        语句块1
-    else
-        语句块2
+    if True/False：
+        语句块1
+    else
+        语句块2
 #### 阶梯形式
-    ifTrue/False：
+    ifTrue/False：
         语句块1
     elif True/False:
         语句块2

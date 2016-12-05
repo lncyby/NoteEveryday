@@ -191,7 +191,7 @@
             语句
            
 #### if的条件运算
-    x if y else z           #如果Y是真值返回x  否则返回z
+    x if y else z           #如果Y是真值返回x  否则返回z
 #### while 语句格式
     while True/False:
         语句块

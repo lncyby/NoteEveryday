@@ -169,12 +169,12 @@
         语句块2
 #### 阶梯形式
     ifTrue/False：
-        语句块1
-    elif True/False:
-        语句块2
-    elif True/False:
-        语句块3
+        语句块1
+    elif True/False:
+        语句块2
+    elif True/False:
+        语句块3
         ...
         ...
     else:
-        语句块n
+        语句块n

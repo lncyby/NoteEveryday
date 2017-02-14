@@ -1,0 +1,119 @@
+解压Django安装包后执行以下步住：
+
+bao@bao:~/Django-1.9.7$ ls
+AUTHORS           dist             docs          INSTALL   MANIFEST.in   README.rst  setup.py
+build             django           extras        js_tests  package.json  scripts     tests
+CONTRIBUTING.rst  Django.egg-info  Gruntfile.js  LICENSE   PKG-INFO      setup.cfg
+
+bao@bao:~/Django-1.9.7$ cd /usr/local/bin
+
+bao@bao:/usr/local/bin$ ls
+django-admin  django-admin.py
+
+bao@bao:/usr/local/bin$ cd ..
+
+bao@bao:/usr/local$ ls
+bin  etc  games  include  lib  man  sbin  share  src
+
+bao@bao:/usr/local$ cd lib
+
+bao@bao:/usr/local/lib$ ls
+python2.7  python3.5
+
+bao@bao:/usr/local/lib$ cd python2.7
+
+bao@bao:/usr/local/lib/python2.7$ cd site-packages/
+
+bao@bao:/usr/local/lib/python2.7/site-packages$ ls
+
+bao@bao:/usr/local/lib/python2.7/site-packages$ ls
+
+bao@bao:/usr/local/lib/python2.7/site-packages$ cd ../dist-packages/
+
+bao@bao:/usr/local/lib/python2.7/dist-packages$ ls
+Django-1.9.7-py2.7.egg  easy-install.pth
+
+bao@bao:/usr/local/lib/python2.7/dist-packages$ cd Django-1.9.7-py2.7.egg/
+
+bao@bao:/usr/local/lib/python2.7/dist-packages/Django-1.9.7-py2.7.egg$ ls
+django  EGG-INFO
+
+bao@bao:/usr/local/lib/python2.7/dist-packages/Django-1.9.7-py2.7.egg$ cd django/
+
+bao@bao:/usr/local/lib/python2.7/dist-packages/Django-1.9.7-py2.7.egg/django$ ls
+apps  contrib  dispatch  __init__.py   __main__.pyc  shortcuts.pyc  test
+bin   core     forms     __init__.pyc  middleware    template       utils
+conf  db       http      __main__.py   shortcuts.py  templatetags   views
+
+bao@bao:/usr/local/lib/python2.7/dist-packages/Django-1.9.7-py2.7.egg/django$ 
+
+bao@bao:~$ cd django_web
+bash: cd: django_web: 没有那个文件或目录
+
+bao@bao:~$ mkdir django_web
+
+bao@bao:~$ cd django_web/
+
+bao@bao:~/django_web$ django-admin startproject booksite
+
+bao@bao:~/django_web$ ls
+booksite
+
+bao@bao:~/django_web$ cd booksite/
+
+bao@bao:~/django_web/booksite$ ls
+booksite  manage.py
+
+bao@bao:~/django_web/booksite$ ll
+总用量 16 
+drwxrwxr-x 3 bao bao 4096 1月  10 13:43 ./
+drwxrwxr-x 3 bao bao 4096 1月  10 13:43 ../
+drwxrwxr-x 2 bao bao 4096 1月  10 13:43 booksite/
+-rwxrwxr-x 1 bao bao  251 1月  10 13:43 manage.py*
+
+bao@bao:~/django_web/booksite$ cd booksite/
+
+bao@bao:~/django_web/booksite/booksite$ ls
+__init__.py  settings.py  urls.py  wsgi.py
+
+bao@bao:~/django_web/booksite/booksite$ cd ..
+
+bao@bao:~/django_web/booksite$ ls
+booksite  manage.py
+
+bao@bao:~/django_web/booksite$ 
+
+
+ａｄｍｉｎ　后台管理
+ｍｉｇｒａｔｉｏｎs　存放数据库日志的文件夹
+ｍｏｄｅｌｓ　模型文件
+ｔｅｘｔ　测试文件
+makemigrations  生成数据库日志文件
+migrate  同步数据库
+
+每次修改或者创建完models.py后需要　./manage.py makemigrations
+./manage.py migrate　　同步数据库
+./manage.py migrate myapp '0001'　　
+
+
+
+
+
+            inspectdb > filename 把数据库生成文件
+	　　　　sqlmigrate myapp 0001 显示0001执行的sql语句
+./manage.py shell   此项目中的ipython
+            flush   清除数据库中的数据
+            dbshell 此项目中的的mysql
+
+./manage.py createsuperuser 注册账号，注册超级用户
+
+ 创建数据库时可以转换成utf-8 使程序可以写入中文
+ create database utfdb DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+ 把外部的数据库倒数到数据库中
+ mysql -u root -p blogdb < blogdb.sql
+
+　把数据库导出并且导入到model.py文件中
+　./manage.py inspectdb > models.py
+
+

@@ -49,6 +49,6 @@
   7.在 IE 6/7 的标准文档模式中设置 “width/height/zoom” 等样式来自动清理浮动。  
   
  ### 建议使用
-  1.采用一个HTML标签，以及css的clear属性，来手工清理浮动; 
-  2.为元素设置 overflow:hidden 或 overflow:auto 值，配合可以设置 zoom:1 样式触发 IE6 haslayout 特性，来达到兼容所有浏览器清理浮动的目的。
-  3.采用伪元素:after，配合可以设置 zoom:1 样式触发 IE6/7 haslayout 特性，来达到兼容所有浏览器清理浮动的目的。    
+  1.采用一个HTML标签，以及css的clear属性，来手工清理浮动;   
+  2.为元素设置 overflow:hidden 或 overflow:auto 值，配合可以设置 zoom:1 样式触发 IE6 haslayout 特性，来达到兼容所有浏览器清理浮动的目的   
+  3.采用伪元素:after，配合可以设置 zoom:1 样式触发 IE6/7 haslayout 特性，来达到兼容所有浏览器清理浮动的目的.      
